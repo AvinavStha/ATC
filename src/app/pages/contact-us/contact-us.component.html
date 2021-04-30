@@ -1,0 +1,67 @@
+<!-- <p>contact-us works!</p> -->
+<section class="contact-us-bg">
+    <div class="contact-us_overlay"></div>
+    <div class="contact-us-banner">
+        <p class="top-text">
+            Contact Us
+        </p>
+    </div>
+</section> 
+
+<section class="section-mrdark-bg">
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-lg-6 col-md-6 col-12">
+            <form (submit)="fnSubmitData()" #contactForm="ngForm">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Full Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="please insert your name" name="fullName" [(ngModel)]="contactUs.name" required #fullName ="ngModel" >
+                        <div *ngIf="fullName.invalid && (fullName.dirty || fullName.touched)"
+                         class="alert alert-danger">
+                        <div *ngIf="fullName.errors">
+                            Name is required.
+                        </div>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com" name="email" [(ngModel)]="contactUs.email" required #email="ngModel">
+                        <div *ngIf="email.invalid && (email.dirty || email.touched)"
+                        class="alert alert-danger">
+                       <div *ngIf="fullName.errors">
+                           The email field is required.
+                       </div>
+                       </div>
+                </div>
+                 <div class="form-group">
+                    <label for="exampleFormControlInput1">Subject</label>
+                    <input type="subject" class="form-control" id="exampleFormControlInput1"
+                        placeholder="" name="subject" [(ngModel)]="contactUs.subject" required #subject="ngModel">
+                        <div *ngIf="subject.invalid && (subject.dirty || subject.touched)"
+                        class="alert alert-danger">
+                       <div *ngIf="fullName.errors">
+                           The subject field is required.
+                       </div>
+                       </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Messages</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Messages" [(ngModel)]="contactUs.Messages" required #Messages="ngModel" ></textarea>
+                    <div *ngIf="Messages.invalid && (Messages.dirty || Messages.touched)"
+                        class="alert alert-danger">
+                       <div *ngIf="Messages.errors">
+                           Please fill your enquiry .
+                       </div>
+                       </div>
+
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-danger" type="submit" [disabled]="!contactForm.form.valid">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</section>

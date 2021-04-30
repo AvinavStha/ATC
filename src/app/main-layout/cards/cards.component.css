@@ -1,0 +1,213 @@
+
+/* Banner */
+.starting_image{
+    background-image: url("../../../assets/images/banner_img_1.jpg");
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.starting_image_overlay{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0,0,0.6);
+}
+
+.starting{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.starting_top_text{
+    
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+.starting_sub_text{
+    font-size: 100px;
+    font-family: "Great Vibes", cursive;
+}
+@media (max-width: 768px){
+    .starting_top_text{
+        font-size: 20px;
+    }
+    .starting_sub_text{
+        font-size: 50px;
+    }
+}
+
+/* About Us */
+.section-heading {
+    text-align: center;
+    margin: auto;
+    float: none;
+    padding-bottom: 20px;
+  }
+  .section-heading h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+  }
+  .section-heading h3 {
+    font-family: "Great Vibes", cursive;
+  }
+  
+  .about {
+    padding: 0 6em 5em 0;
+  }
+  
+  .about-heading {
+    color: #505050;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  
+  .about-text {
+    color: #757575;
+    line-height: 24px;
+  }
+  .btn-about-us{
+    color: #000;
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+
+  .btn-about-us:hover {
+    background: #fff;
+    color: #5d5d5d;
+
+  }
+  
+
+/* Product */
+.products-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .products-sub-heading {
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+  }
+  
+  .products-box ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  .products-box ul li {
+    height: 56px;
+  }
+  
+  .products-text {
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  .products-text .products-text-heading {
+    margin-bottom: 0px;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .products-text .products-text-sub-heading {
+    color: #ababab;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    padding-top: 3px;
+  }
+  
+  .products-collage {
+    background-image: url("../../../assets/images/collage_view.jpg");
+    position: relative;
+    height: 490px;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .products-collage-overlay {
+    position: relateive;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .btn-products {
+    color: #fff;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  .btn-products:hover {
+    background: #fff;
+    color: #5d5d5d;
+  }
+/* Contact Us */
+  .contact-us {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  
+  .contact-strip {
+    background:  linear-gradient(-45deg,#0FB4BC, #FFC42D);
+    padding: 30px 0px 0px;
+  }
+  .contact-strip i {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #fff;
+    color: #228b67;
+    font-size: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .contact-info {
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .contact-info h4,
+  .contact-info a {
+    color: #fff;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+  }
+  .contact-info a {
+    font-weight: 100;
+  }
+  .contact-info a:hover {
+    text-decoration: none;
+  }

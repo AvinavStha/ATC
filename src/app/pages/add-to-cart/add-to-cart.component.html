@@ -1,0 +1,159 @@
+<!-- <p>add-to-cart works!</p> -->
+<!-- <p>add-to-cart works!</p> -->
+<section class="add-to-cart-bg">
+    <div class="add-to-cart_overlay"></div>
+    <div class="add-to-cart-banner">
+        <p class="top-text">
+            Shopping List
+        </p>
+    </div>
+</section>
+  
+
+<section class="section-mrdark-bg">
+    <div class="container">
+            <div class="col-12 space"></div>
+        <div class="row mt-30 mb-30">
+            <div class="col-md-6">
+                <div class="Shopping-list">
+                    <h2>Your Shopping List</h2>
+                    <div class="item-list-table">
+                        <table class="content-table">
+                            <thead>
+                              <tr>
+                                <th>S.No.</th>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Domenic</td>
+                                <td>88,110</td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <div class="Payment-option">
+                    <h3>
+                    <strong>Payment Option</strong> 
+                    </h3>
+                    <p>
+                        Ashirbad Trading Company Ltd. 
+                        <br>
+                        Bank: Laxmi Bank Limited
+                        <br>
+                        mail:avi.shrestha.775@gmail.com
+                        <br>
+                    </p>
+                    <div class="col-lg-6 col-md-6 col-md-12">
+                        <h3>
+                            Locate Us
+                        </h3>
+                        <iframe class="google-map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.91477198084!2d-74.11976362005403!3d40.69740344165727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2snp!4v1606381800349!5m2!1sen!2snp"></iframe>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-6">
+                <div class="new-title">
+                    <h3 >Send an Inquiry</h3>
+                </div>
+                <form (submit)="fnSubmitData()" #contactForm="ngForm">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Full Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="please insert your name" name="fullName" [(ngModel)]="addToCart.name" required #fullName ="ngModel" >
+                            <div *ngIf="fullName.invalid && (fullName.dirty || fullName.touched)"
+                            class="alert alert-danger">
+                                <div *ngIf="fullName.errors">
+                                    Name is required.
+                                </div>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Country</label><br>
+                        <select class="from-control">
+                             <option value="" selected disabled>Select Country</option>
+                                <option *ngFor="let cl of countriesList">{{cl.name}}</option>    
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">City</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Enter City" name="city" [(ngModel)]="addToCart.city" required #city ="ngModel" >
+                        <div *ngIf="city.invalid && (city.dirty || city.touched  )"
+                         class="alert alert-danger">
+                            <div *ngIf="city.errors">
+                                Please Enter Your City.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">State</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Enter Your State" name="state" [(ngModel)]="addToCart.state" required #state ="ngModel" >
+                        <div *ngIf="state.invalid && (state.dirty || state.touched  )"
+                        class="alert alert-danger">
+                            <div *ngIf="state.errors">
+                                Please Enter Valid Postal Code.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Postal Code</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Enter Postal Code" name="postalCode" [(ngModel)]="addToCart.postalCode" required #postalCode ="ngModel" >
+                        <div *ngIf="postalCode.invalid && (postalCode.dirty || postalCode.touched  )"
+                        class="alert alert-danger">
+                            <div *ngIf="postalCode.errors">
+                                Please Enter Valid Postal Code.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com" name="email" [(ngModel)]="addToCart.email" required #email="ngModel">
+                            <div *ngIf="email.invalid && (email.dirty || email.touched)"
+                            class="alert alert-danger">
+                                <div *ngIf="email.errors">
+                                    The email field is required.
+                                </div>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Phone no:</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Enter your Contact number!" name="phone_number" [(ngModel)]="addToCart.phone_number" required #phone_number="ngModel">
+                            <div *ngIf="phone_number.invalid && (phone_number.dirty || phone_number.touched)"
+                            class="alert alert-danger">
+                                <div *ngIf="phone_number.errors">
+                                    The phone number field is required.
+                                </div>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Messages</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Messages" [(ngModel)]="addToCart.Messages" required #Messages="ngModel" ></textarea>
+                        <div *ngIf="Messages.invalid && (Messages.dirty || Messages.touched)"
+                            class="alert alert-danger">
+                        <div *ngIf="Messages.errors">
+                            Please fill your enquiry .
+                        </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-danger" type="submit" [disabled]="!contactForm.form.valid">Send</button>
+                    </div>
+                </form>
+            </div>     
+        </div>
+    </div>
+</section>

@@ -1,0 +1,46 @@
+.starting_img {
+    background-image: url("../../../../src/assets/images/banner_img_1.jpg");
+    position: relative;
+    height: 100vh;
+    min-height: 100vh;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.starting_image_overlay{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+ }
+ 
+.starting{
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+ }
+ .starting_top_text{
+   font-size: 30px;
+   font-family: "Montserrat", sans-serif;
+   text-transform: uppercase;
+ }
+ .starting_sub_text{
+   font-size: 100px;
+  font-family: "Great Vibes" cursive;
+  }
+
+@media (max-width: 768px){
+  .starting_top_text{
+    font-size: 20px;
+  }
+  .starting_sub_text{
+    font-size: 50px;
+  }
+}
+  

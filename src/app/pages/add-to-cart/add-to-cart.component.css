@@ -1,0 +1,113 @@
+.add-to-cart-bg {
+    background-image: url("../../../assets/images/shoppinglist.JPG");
+    position: relative;
+    min-height: 50vh;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .add-to-cart-bg_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .add-to-cart-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  .add-to-cart-banner .top-text {
+    font-size: 75px;
+    font-family: "Great Vibes", cursive;
+  }
+  
+  .space{
+    padding-bottom: 20px;
+  }
+  
+  .shopping-list{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+  }
+  
+  
+  .payment-option{
+    margin: auto;
+    float: none;
+    padding-bottom: 20px;
+  }
+  .payment-option h2,h3{
+      font-weight: 600;
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      border-color: rgba(43, 43, 43, 0.1);
+  
+  }
+  
+  .payment-option p{
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+  
+  
+  .google-map {
+    border: 0;
+    width: 100%;
+    height: 200px;
+  }
+  
+  
+   .new-title h3{
+    border-bottom: 2px solid #000;
+    padding-bottom: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+   }
+  

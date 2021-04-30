@@ -1,0 +1,88 @@
+.about-bg {
+    background-image: url("../../../assets/images/banner_img_1.jpg");
+    position: relative;
+    min-height: 50vh;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .about-bg_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .about-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  .about-banner .top-text {
+    font-size: 75px;
+    font-family: "Great Vibes", cursive;
+  }
+  
+  .section-heading {
+    text-align: center;
+    margin: auto;
+    float: none;
+    padding-bottom: 20px;
+  }
+  .section-heading h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+  }
+  .section-heading h3 {
+    font-size: 35px;
+    font-family: "Great Vibes", cursive;
+  }
+  
+  .about {
+    text-align: justify;
+  }
+  
+  .about-heading {
+    color: #505050;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  
+  .about-text {
+    color: #757575;
+    line-height: 24px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .team-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+  
+  .img-width {
+    width: 350px;
+  }
+  
+  .team-info {
+    padding: 10px 30px 20px 30px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .team-info h3 {
+    color: #454545;
+    margin-top: 20px;
+    font-weight: 700;
+  }
+  .team-info p {
+    color: #bfbdbd;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }

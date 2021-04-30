@@ -1,0 +1,28 @@
+.contact-us-bg {
+    background-image: url("../../../assets/images/shoppinglist.JPG");
+    position: relative;
+    min-height: 50vh;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .contact-us-bg_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .contact-us-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  .contact-us-banner .top-text {
+    font-size: 75px;
+    font-family: "Great Vibes", cursive;
+  }

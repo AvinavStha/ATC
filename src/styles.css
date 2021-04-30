@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1370px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1800px;
+  }
+}
+
+.section-mr {
+  padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+.dark-bg {
+  background: #f9f9f9;
+}
